@@ -30,7 +30,7 @@ const onLoginSubmit = (event) => {
 // 메인 화면 출력
 const paintGreeting = (username) => {
     const saveUsername = localStorage.getItem(USERNAME_KEY);
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `${username} 님 환영합니다!`;
     logoutDiv.addEventListener("submit", logoutFunc);
     greeting.classList.remove(HIDDEN_CLASSNAME);
     logoutDiv.classList.remove(HIDDEN_CLASSNAME);
