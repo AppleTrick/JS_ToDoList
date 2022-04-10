@@ -2,10 +2,12 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
+// 로그아웃 부분
 const logoutDiv = document.querySelector("#logout");
 const logoutButton = document.querySelector("#logout input");
 
-const toDoFormC = document.getElementById("todo-form");
+// todo-list 부분
+const toDoFormC = document.getElementById("todo-Div");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username"
@@ -44,7 +46,6 @@ const logoutFunc = (event) => {
     toDoFormC.classList.add(HIDDEN_CLASSNAME);
     IsLogin();
 }
-
 
 
 const IsLogin = () => {
