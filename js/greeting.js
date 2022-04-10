@@ -5,6 +5,8 @@ const greeting = document.querySelector("#greeting");
 const logoutDiv = document.querySelector("#logout");
 const logoutButton = document.querySelector("#logout input");
 
+const toDoFormC = document.getElementById("todo-form");
+
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username"
 
@@ -26,11 +28,11 @@ const onLoginSubmit = (event) => {
 // 메인 화면 출력
 const paintGreeting = (username) => {
     const saveUsername = localStorage.getItem(USERNAME_KEY);
-    greeting.classList.remove(HIDDEN_CLASSNAME);
     greeting.innerText = `Hello ${username}`;
     logoutDiv.addEventListener("submit", logoutFunc);
+    greeting.classList.remove(HIDDEN_CLASSNAME);
     logoutDiv.classList.remove(HIDDEN_CLASSNAME);
-
+    toDoFormC.classList.remove(HIDDEN_CLASSNAME);
 }
 
 // 로그 아웃함수
@@ -39,20 +41,26 @@ const logoutFunc = (event) => {
     localStorage.removeItem(USERNAME_KEY);
     greeting.classList.add(HIDDEN_CLASSNAME);
     logoutDiv.classList.add(HIDDEN_CLASSNAME);
+    toDoFormC.classList.add(HIDDEN_CLASSNAME);
     IsLogin();
 }
 
-// 유저 로그인 내용 확인
-const saveUsername = localStorage.getItem(USERNAME_KEY);
+
 
 const IsLogin = () => {
+    // 유저 로그인 내용 확인
+    const saveUsername = localStorage.getItem(USERNAME_KEY);
+
+    console.log("작동");
     if(saveUsername === null){
+        console.log("유저 비어있음");
         // show the Form
         loginForm.classList.remove(HIDDEN_CLASSNAME);
         loginForm.addEventListener("submit" , onLoginSubmit);
     }else{
         // show the Greeting
         paintGreeting(saveUsername);
+        console.log("유저 존재함");
     }
 }
 
