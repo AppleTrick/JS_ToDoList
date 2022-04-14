@@ -75,12 +75,15 @@
   left: 50%;
   transform: translate(-50%, 0);
 }
+#todo-Div{
+  width: 60vh;
+}
 
 #todo-form input{
   margin-top: 20px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  width: 50vh;
+  width: 100%;
   height: 40px;
   font-size: 15px;
   text-align: center;
@@ -135,12 +138,18 @@
   1px 1px 0 #000;
 }
 
+#todo-list li{
+  width: 100%;
+}
+
 #todo-list li span{
+  max-width: 30vh;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 20px;
   text-shadow:
+
   -1px -1px 0 #000,
   1px -1px 0 #000,
   -1px 1px 0 #000,
@@ -170,6 +179,28 @@
   filter: invert(87%) sepia(68%) saturate(903%) hue-rotate(180deg) brightness(112%) contrast(106%);
   width: 45px;
   height: 45px;
+}
+
+/* 명언 부분 css */
+#quote {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;  
+  position: absolute;
+  bottom : 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+#quote div{
+  margin-bottom: 30px;
 }
 
 

@@ -28,15 +28,15 @@ const quotes = [
         name : "짱구는 못말려",
     },
     {
-        quotes : "한번 실패했다고 다른 사람에게 모든 것을 떠넘길 것인지, 아니면 실패했어도 한번 더 실패한 사람들에게 손을 내밀어줄것인지",
+        quotes : "한번 실패했다고 다른 사람에게 모든 것을 떠넘길 것인지, <br> 아니면 실패했어도 한번 더 실패한 사람들에게 손을 내밀어줄것인지",
         name : "어떤 과학의 초전자포",
     },
 ]
 
-const quote = document.querySelector('#quote span:first-child');
-const author = document.querySelector('#quote span:last-child');
+const quote = document.querySelector('#quote div:first-child span');
+const author = document.querySelector('#quote div:last-child span');
 
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todayQuote.quotes;
-author.innerHTML = todayQuote.name;
+quote.innerHTML = todayQuote.quotes;
+author.innerHTML = `- ${todayQuote.name} -`;

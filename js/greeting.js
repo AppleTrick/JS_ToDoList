@@ -6,6 +6,9 @@ const greeting = document.querySelector("#greeting");
 const logoutDiv = document.querySelector("#logout");
 const logoutButton = document.querySelector("#logout input");
 
+// 명언 부분
+const quoteDiv = document.querySelector("#quote");
+
 // todo-list 부분
 const toDoFormC = document.getElementById("todo-Div");
 
@@ -21,6 +24,7 @@ const onLoginSubmit = (event) => {
     event.preventDefault();
 
     loginForm.classList.add(HIDDEN_CLASSNAME);  // 로그인폼은 숨기고
+    quoteDiv.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
     loginInput.value = "";
     localStorage.setItem(USERNAME_KEY,username);
@@ -51,12 +55,10 @@ const logoutFunc = (event) => {
 const IsLogin = () => {
     // 유저 로그인 내용 확인
     const saveUsername = localStorage.getItem(USERNAME_KEY);
-
-    console.log("작동");
     if(saveUsername === null){
-        console.log("유저 비어있음");
         // show the Form
         loginForm.classList.remove(HIDDEN_CLASSNAME);
+        quoteDiv.classList.remove(HIDDEN_CLASSNAME);
         loginForm.addEventListener("submit" , onLoginSubmit);
     }else{
         // show the Greeting
