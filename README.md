@@ -12,3 +12,6 @@ IDE : VSCode
 - 무작위 명언 구현하기
 - To-Do-List 구현
 
+## USE
+- bootstrapIcon
+- OpenWeatherAPI
