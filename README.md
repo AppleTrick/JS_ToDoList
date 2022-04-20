@@ -22,9 +22,11 @@ const API_KEY = "";
 
 ## 결과물
 
-![startHome](https://user-images.githubusercontent.com/31761527/164179127-fee8b5bc-96e5-4d08-b05e-6e6cbcf62cd6.jpeg){: width="500px" }
+- 메인화면
+![startHome](https://user-images.githubusercontent.com/31761527/164179127-fee8b5bc-96e5-4d08-b05e-6e6cbcf62cd6.jpeg)
 
-![mainHome](https://user-images.githubusercontent.com/31761527/164179116-c5dd9240-a4c1-49fb-ab97-654bd574046e.jpeg){: width="500px" }
+- 로그인 화면
+![mainHome](https://user-images.githubusercontent.com/31761527/164179116-c5dd9240-a4c1-49fb-ab97-654bd574046e.jpeg)
 
 
 ## 사용된 라이브러리
