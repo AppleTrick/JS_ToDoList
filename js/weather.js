@@ -3,7 +3,7 @@
 
 // 성공할 경우
 
-const API_KEY = "ad4be890c70a3d43fcf896515d0a9db2";
+const API_KEY = "api 키를 입력해주세요";
 
 const onGeoOk = (position) => {
     const lat = position.coords.latitude;
