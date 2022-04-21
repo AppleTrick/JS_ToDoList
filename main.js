@@ -40,6 +40,9 @@ const createWindow = () => {
 
     const customMenu = Menu.buildFromTemplate(template);
     Menu.setApplicationMenu(customMenu);
+
+    // 콘솔창 띄울수 있게 해주기
+    window.webContents.openDevTools();
 }
 
 app.whenReady().then(()=>{
