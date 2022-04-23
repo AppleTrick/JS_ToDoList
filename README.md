@@ -43,7 +43,7 @@ const API_KEY = "";
 
 ## 향후 개선사항
 
-- electron으로 Pc프로그램 생성시 Mac, windows 에서 둘다 getCurrentPosition 사용시, 사용자 엑세스가 거부되어 현재위치를 날려주는 기는 사용 불가능 개선필요.
+- [ ] electron으로 Pc프로그램 생성시 Mac, windows 에서 둘다 getCurrentPosition 사용시, 사용자 엑세스가 거부됨.
 
 ## 사용된 라이브러리
 - bootstrapIcon
