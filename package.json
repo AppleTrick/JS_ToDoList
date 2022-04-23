@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Language : Javascript / HTML / CSS IDE : VSCode",
   "main": "main.js",
-  "productName" : "JS-TDL",
+  "productName": "JS-TDL",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -34,7 +34,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon" : "./icon.icns"
+        "icon": "./icon.icns"
       },
       "makers": [
         {
