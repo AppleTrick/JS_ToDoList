@@ -6,7 +6,7 @@
 // require("dotenv").config({path : "../.env"});
 
 // const API_KEY = `${process.env.API_KEY}`;
-const API_KEY = "";
+const API_KEY = "ad4be890c70a3d43fcf896515d0a9db2";
 
 const onGeoOk = (position) => {
     const lat = position.coords.latitude;
@@ -55,8 +55,8 @@ const onGeoError = (error) => {
 // cosnt geo = require('geo')
 navigator.geolocation.getCurrentPosition(onGeoOk,onGeoError);
 
-if(navigator.geolocation){
-    alert("geoloaction 존재")
-}else{
-    alert("지원안함")
-}
+// if(navigator.geolocation){
+//     alert("geoloaction 존재")
+// }else{
+//     alert("지원안함")
+// }
