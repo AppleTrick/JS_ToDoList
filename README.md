@@ -3,6 +3,9 @@
 Language : Javascript / HTML / CSS
 IDE : VSCode
 
+(https://appletrick.github.io/JS_ToDoList/)
+링크로 들어가면 바로 확인 가능해요!
+
 ## 구현기능
 - 배경화면 랜덤 변화
 - 로그인기능 (localstorage 사용)
@@ -28,6 +31,8 @@ IDE : VSCode
 npm run make
 ```
 입력 시 빌드
+
+--- 
 
 ## ❗️다운받고 실행하기 전에
 
