@@ -22,7 +22,12 @@ IDE : VSCode
 ├── electron-squirrel-startup@1.0.0
 └── electron@18.1.0
 ```
-웹뿐만 아니라 PC에서 고정적인 형태로 사용을 하기 위해 electron 을 사용하여 pc 프로그램으로 변화
+웹뿐만 아니라 PC에서 고정적인 형태로 사용을 하기 위해 electron 을 사용하여 pc에서 프로그램으로 동일하게 사용할 수 있음
+
+```
+npm run make
+```
+입력 시 빌드
 
 ## ❗️다운받고 실행하기 전에
 
